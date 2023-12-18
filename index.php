@@ -37,7 +37,7 @@
     </head>
     <body>
         <header>
-			<h1>遊戲機台系統</h1>
+			<h1>遊戲機台紀錄系統</h1>
 			<ul>
 				<li><a href="#">店舖與機台資訊</a></li>
 				<li><a href="game_record.php">遊戲紀錄</a></li>
