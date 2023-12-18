@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>遊戲機台紀錄系統</title>
+        <title>湯姆熊系統</title>
 		<style>
 			header{
 				height:50px;
@@ -37,14 +37,14 @@
     </head>
     <body>
         <header>
-			<h1>遊戲機台系統</h1>
+			<h1>遊戲機台紀錄系統</h1>
 			<ul>
-				<li><a href="#">店舖與機台資訊</a></li>
-				<li><a href="game_record.php">遊戲紀錄</a></li>
-				<li><a href="#">修改</a></li>
+                <li><a href="index.php">首頁</a></li>
+				<li><a href="#">搜尋</a></li>
+				<li><a href="game_record_insert.php">新增</a></li>
 			</ul>
 		</header>
-		<main>
+        <main>
 			<div class="pic">
 				<img src='https://shoplineimg.com/5fa3d2b246e9ed0029f5f6bf/6437c7fca4337e0020b5df7f/800x.jpg?'>
 			</div>
