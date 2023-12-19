@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2023-12-18 14:27:09
+-- 產生時間： 2023-12-18 17:31:26
 -- 伺服器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -131,16 +131,14 @@ INSERT INTO `store` (`name`, `city`, `address`) VALUES
 --
 ALTER TABLE `cabinet`
   ADD PRIMARY KEY (`ID`),
-  ADD KEY `storeName` (`storeName`),
-  ADD KEY `cabinetName` (`cabinetName`);
+  ADD KEY `storeName` (`storeName`);
 
 --
 -- 資料表索引 `playdata`
 --
 ALTER TABLE `playdata`
   ADD PRIMARY KEY (`ID`),
-  ADD KEY `storeName` (`storeName`),
-  ADD KEY `cabinetName` (`cabinetName`);
+  ADD KEY `storeName` (`storeName`);
 
 --
 -- 資料表索引 `store`
