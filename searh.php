@@ -125,7 +125,6 @@
 				overflow: hidden;
 				right: 20px;
 			}
-
 			.menu-list ul {
 				list-style: none;
 				padding: 0;
@@ -155,9 +154,10 @@
 		<h1>遊戲機台紀錄系統</h1>
 		<div class="menu-list">
 			<ul>
-				<li><a href="index.php">首頁</a></li>
-				<li><a href="searh.php">搜尋</a></li>
-				<li><a href="game_record_insert.php">新增</a></li>
+                <li><a href="index.php">首頁</a></li>
+				<li><a href="searh_all_show.php">全部顯示</a></li>
+				<li><a href="#">已玩家名搜尋</a></li>
+				<li><a href="#">以指定時間搜尋</a></li>
 			</ul>
 		</div>
 	</header>
