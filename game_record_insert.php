@@ -31,8 +31,13 @@
                 <input type="datetime-local" name="playtime" value="<?php echo $nowtime; ?>" required><br>
                 <input type="radio" name="new_old_player" value="new"> 新玩家註冊<br>
                 <input type="radio" name="new_old_player" value="old"> 舊玩家<br>
-                <input type="submit">
+                <input type="submit" onclick="f()">
             </form>
+            <script>
+                function f(){
+                    alert("插入成功");
+                }
+            </script>
 		</main>
     </body>
 </html>
