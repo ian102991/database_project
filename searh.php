@@ -39,8 +39,11 @@
 
 		.pic {
 			text-align: center;
+			display: block;
 		}
-
+		.player{
+			display: none;
+		}
 		#menu {
 			display: none;
 		}
@@ -58,7 +61,13 @@
 				z-index: 2;
 				right: 20px;
 			}
-
+			.pic {
+				text-align: center;
+				display: block;
+			}
+			.player{
+				display: none;
+			}
 			.line .menu,
 			.line .menu::before,
 			.line .menu::after {
@@ -156,15 +165,34 @@
 			<ul>
                 <li><a href="index.php">首頁</a></li>
 				<li><a href="searh_all_show.php">全部顯示</a></li>
-				<li><a href="#">已玩家名搜尋</a></li>
+				<li><a href="#" onclick="show_input_player()">以玩家名搜尋</a></li>
 				<li><a href="#">以指定時間搜尋</a></li>
 			</ul>
 		</div>
 	</header>
 	<main>
-		<div class="pic">
+		<div class="pic" id="pic">
 			<img src='https://shoplineimg.com/5fa3d2b246e9ed0029f5f6bf/6437c7fca4337e0020b5df7f/800x.jpg?'>
 		</div>
+		<div class="player" id="player">
+			<form action="searh_player_name.php" method="get">
+				<input name="player_name" placeholder="請輸入玩家名">
+			</form>
+		</div>
+		<script>
+			function show_input_player(){
+				var t=document.getElementById("pic");
+				var t1=document.getElementById("player");
+				if(t.style.display === "none"){
+					t.style.display = "block";
+					t1.style.display = "none";
+				}
+				else{
+					t1.style.display = "block";
+					t.style.display = "none";
+				}
+			}
+		</script>
 	</main>
 </body>
 
