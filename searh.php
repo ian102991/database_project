@@ -44,6 +44,9 @@
 		.player{
 			display: none;
 		}
+		.date{
+			display: none;
+		}
 		#menu {
 			display: none;
 		}
@@ -66,6 +69,9 @@
 				display: block;
 			}
 			.player{
+				display: none;
+			}
+			.date{
 				display: none;
 			}
 			.line .menu,
@@ -166,7 +172,7 @@
                 <li><a href="index.php">首頁</a></li>
 				<li><a href="searh_all_show.php">全部顯示</a></li>
 				<li><a href="#" onclick="show_input_player()">以玩家名搜尋</a></li>
-				<li><a href="#">以指定時間搜尋</a></li>
+				<li><a href="#" onclick="show_input_date()">以指定時間搜尋</a></li>
 			</ul>
 		</div>
 	</header>
@@ -176,21 +182,38 @@
 		</div>
 		<div class="player" id="player">
 			<form action="searh_player_name.php" method="get">
-				<input name="player_name" placeholder="請輸入玩家名">
+				<input name="player_name" placeholder="請輸入玩家名"><br>
+				<input type="submit">
+			</form>
+		</div>
+		<div class="date" id="date">
+			<form action="searh_date.php" method="get">
+				起始時間:<input type="datetime-local" id="date1" name="date1" onchange="changedate2()" required><br>
+				結束時間:<input type="datetime-local" id="date2" name="date2" required><br>
+				<input type="submit">
 			</form>
 		</div>
 		<script>
+			function changedate2(){
+				var datetimeInput1 = document.getElementById('date1');
+				var datetimeInput2 = document.getElementById('date2');
+				datetimeInput2.min=datetimeInput1.value;
+			}
 			function show_input_player(){
 				var t=document.getElementById("pic");
 				var t1=document.getElementById("player");
-				if(t.style.display === "none"){
-					t.style.display = "block";
-					t1.style.display = "none";
-				}
-				else{
-					t1.style.display = "block";
-					t.style.display = "none";
-				}
+				var t2=document.getElementById("date");
+				t1.style.display = "block";
+				t.style.display = "none";
+				t2.style.display = "none";
+			}
+			function show_input_date(){
+				var t=document.getElementById("pic");
+				var t1=document.getElementById("player");
+				var t2=document.getElementById("date");
+				t1.style.display = "none";
+				t.style.display = "none";
+				t2.style.display = "block";
 			}
 		</script>
 	</main>
