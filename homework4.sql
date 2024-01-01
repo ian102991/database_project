@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2023-12-18 17:31:26
+-- 產生時間： 2024-01-01 17:16:41
 -- 伺服器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -98,7 +98,9 @@ CREATE TABLE `playdata` (
 INSERT INTO `playdata` (`ID`, `new_old_player`, `playerName`, `storeName`, `cabinetName`, `playTime`) VALUES
 (1, 'new', 'Player', '湯姆熊歡樂世界台北金萬年店', 'SOUND VOLTEX （Legacy Model (舊框)）', '2023-10-13 19:40:24'),
 (2, 'old', 'Player', '湯姆熊歡樂世界台北金萬年店', 'SOUND VOLTEX （Legacy Model (舊框)）', '2023-12-01 11:37:50'),
-(3, 'new', 'Admin', '湯姆熊歡樂世界淡水大都會', 'Taiko no Tatsujin （新框體）', '2023-12-01 11:14:15');
+(3, 'new', 'Admin', '湯姆熊歡樂世界淡水大都會', 'Taiko no Tatsujin （新框體）', '2023-12-01 11:14:15'),
+(4, 'new', '589', '湯姆熊歡樂世界淡水大都會', '55', '2023-12-30 18:15:56'),
+(5, 'old', '589', '湯姆熊歡樂世界淡水大都會', '66', '2024-01-02 00:12:34');
 
 -- --------------------------------------------------------
 
@@ -160,7 +162,7 @@ ALTER TABLE `cabinet`
 -- 使用資料表自動遞增(AUTO_INCREMENT) `playdata`
 --
 ALTER TABLE `playdata`
-  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `ID` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- 已傾印資料表的限制式
@@ -176,8 +178,7 @@ ALTER TABLE `cabinet`
 -- 資料表的限制式 `playdata`
 --
 ALTER TABLE `playdata`
-  ADD CONSTRAINT `playdata_ibfk_1` FOREIGN KEY (`storeName`) REFERENCES `cabinet` (`storeName`) ON UPDATE CASCADE,
-  ADD CONSTRAINT `playdata_ibfk_2` FOREIGN KEY (`cabinetName`) REFERENCES `cabinet` (`cabinetName`);
+  ADD CONSTRAINT `playdata_ibfk_1` FOREIGN KEY (`storeName`) REFERENCES `store` (`name`) ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
