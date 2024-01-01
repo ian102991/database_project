@@ -1,10 +1,11 @@
 <html>
 
 <head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 	<title>遊戲機台紀錄系統</title>
 	<style>
 		header {
-			height: 50px;
+			height: 60px;
 			weight: 100px;
 			background-color: Gold;
 		}
@@ -12,14 +13,14 @@
 		header h1 {
 			position: absolute;
 			left: 50px;
-			top: 0;
 			line-height: 20px;
+			top:10px;
 		}
 
 		header ul {
 			position: absolute;
 			right: 5vw;
-			top: 0;
+			top: 10px;
 			line-height: 30px;
 
 		}
@@ -50,7 +51,6 @@
 		#menu {
 			display: none;
 		}
-
 		@media screen and (max-width: 768px) {
 			.line {
 				width: 20px;
@@ -161,6 +161,8 @@
 </head>
 
 <body>
+<script src="js/bootstrap.min.js"></script>
+	<div class="col-12">
 	<header>
 		<input type="checkbox" id="menu">
 		<label for="menu" class="line">
@@ -176,6 +178,7 @@
 			</ul>
 		</div>
 	</header>
+	</div>
 	<main>
 		<div class="pic" id="pic">
 			<img src='https://shoplineimg.com/5fa3d2b246e9ed0029f5f6bf/6437c7fca4337e0020b5df7f/800x.jpg?'>
@@ -183,14 +186,14 @@
 		<div class="player" id="player">
 			<form action="searh_player_name.php" method="get">
 				<input name="player_name" placeholder="請輸入玩家名"><br>
-				<input type="submit">
+				<input type="submit" class="btn btn-warning">
 			</form>
 		</div>
 		<div class="date" id="date">
 			<form action="searh_date.php" method="get">
-				起始時間:<input type="datetime-local" id="date1" name="date1" onchange="changedate2()" required><br>
-				結束時間:<input type="datetime-local" id="date2" name="date2" required><br>
-				<input type="submit">
+				起始時間:<input type="datetime-local" step="1" id="date1" name="date1" onchange="changedate2()" required><br><br>
+				結束時間:<input type="datetime-local" step="1" id="date2" name="date2" required><br><br>
+				<input type="submit" class="btn btn-warning">
 			</form>
 		</div>
 		<script>
