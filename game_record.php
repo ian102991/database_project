@@ -159,6 +159,7 @@
 				<li><a href="index.php">首頁</a></li>
 				<li><a href="searh.php">搜尋</a></li>
 				<li><a href="game_record_insert.php">新增</a></li>
+				<li><a href="delete_by_player_name.php">刪除</a></li>
 			</ul>
 		</div>
 	</header>
