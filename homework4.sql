@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2024-01-01 17:16:41
+-- 產生時間： 2024-01-02 15:44:48
 -- 伺服器版本： 10.4.28-MariaDB
 -- PHP 版本： 8.2.4
 
@@ -86,6 +86,7 @@ CREATE TABLE `playdata` (
   `ID` int(10) NOT NULL,
   `new_old_player` varchar(100) NOT NULL,
   `playerName` varchar(20) NOT NULL,
+  `password` varchar(100) NOT NULL,
   `storeName` varchar(30) NOT NULL,
   `cabinetName` varchar(50) NOT NULL,
   `playTime` datetime DEFAULT NULL
@@ -95,12 +96,10 @@ CREATE TABLE `playdata` (
 -- 傾印資料表的資料 `playdata`
 --
 
-INSERT INTO `playdata` (`ID`, `new_old_player`, `playerName`, `storeName`, `cabinetName`, `playTime`) VALUES
-(1, 'new', 'Player', '湯姆熊歡樂世界台北金萬年店', 'SOUND VOLTEX （Legacy Model (舊框)）', '2023-10-13 19:40:24'),
-(2, 'old', 'Player', '湯姆熊歡樂世界台北金萬年店', 'SOUND VOLTEX （Legacy Model (舊框)）', '2023-12-01 11:37:50'),
-(3, 'new', 'Admin', '湯姆熊歡樂世界淡水大都會', 'Taiko no Tatsujin （新框體）', '2023-12-01 11:14:15'),
-(4, 'new', '589', '湯姆熊歡樂世界淡水大都會', '55', '2023-12-30 18:15:56'),
-(5, 'old', '589', '湯姆熊歡樂世界淡水大都會', '66', '2024-01-02 00:12:34');
+INSERT INTO `playdata` (`ID`, `new_old_player`, `playerName`, `password`, `storeName`, `cabinetName`, `playTime`) VALUES
+(1, 'new', 'Player', '01057035', '湯姆熊歡樂世界台北金萬年店', 'SOUND VOLTEX （Legacy Model (舊框)）', '2023-10-13 19:40:24'),
+(2, 'old', 'Player', '01057035', '湯姆熊歡樂世界台北金萬年店', 'SOUND VOLTEX （Legacy Model (舊框)）', '2023-12-01 11:37:50'),
+(3, 'new', 'Admin', '0106C052', '湯姆熊歡樂世界淡水大都會', 'Taiko no Tatsujin （新框體）', '2023-12-01 11:14:15');
 
 -- --------------------------------------------------------
 
