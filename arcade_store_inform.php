@@ -165,7 +165,7 @@
             <div class="menu-list">
 			<ul>
 				<li><a href="arcade_store_index.php">回到前一頁</a></li>
-                <li><a href="index_temp.php">回到首頁</a></li>
+                		<li><a href="index.php">回到首頁</a></li>
 			</ul>
 		</div>
         </header>
