@@ -5,6 +5,9 @@ try{
     $b=$_GET["date2"];
     $a=new datetime($a);
     $b=new datetime($b);
+    $query = ("create or replace index player_name_index on homework4.playdata(playerName)");
+    $stmt= $db->prepare($query);
+    $stmt->execute();
     $query = ("select *,count(*) from ((select * from homework4.playdata where UNIX_TIMESTAMP(playTime) < UNIX_TIMESTAMP(?)) except (select * from homework4.playdata where UNIX_TIMESTAMP(playTime) < UNIX_TIMESTAMP(?))) as a group by playerName");
     $stmt= $db->prepare($query);
     $stmt->execute(array($b->format('Y-m-d H:i:s'),$a->format('Y-m-d H:i:s')));

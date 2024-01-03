@@ -179,7 +179,7 @@
             <th>地址</th>
             </tr>";
 
-            $query = ("select * from store order by city");
+            $query = ("select * from homework4.store order by city");
             $stmt = $db -> prepare($query);
             $stmt -> execute();
             $result = $stmt -> fetchAll();

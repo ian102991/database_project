@@ -77,7 +77,7 @@ INSERT INTO `cabinet` (`ID`, `storeName`, `cabinetName`, `wait`, `price`) VALUES
 (51, '湯姆熊歡樂世界淡水大都會', 'CHUNITHM （SUN）', '簽名排隊', '代幣'),
 (52, 'X50 Music game station(西門)', 'jubeat （Ave.）', '直接排隊', '現金'),
 (53, 'X50 Music game station(西門)', 'GROOVE COASTER AC （4EX）', '直接排隊', '現金'),
-(54, 'X50 Music game station(西門)', 'Pop\'n Music （UniLab）', '其他', '現金'),
+(54, 'X50 Music game station(西門)', 'Pop\n Music （UniLab）', '其他', '現金'),
 (55, 'X50 Music game station(西門)', 'maimai （DX FESTiVAL）', '其他', '現金'),
 (56, 'X50 Music game station(西門)', 'maimai （DX FESTiVAL）', '其他', '現金'),
 (57, 'X50 Music game station(西門)', 'maimai （DX FESTiVAL）', '其他', '現金'),

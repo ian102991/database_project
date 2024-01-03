@@ -181,7 +181,7 @@
             </tr>";
 
             $cabinetName = $_POST["cabinetName"];
-            $query = ("select * from cabinet where cabinetName = ? order by ID asc");
+            $query = ("select * from homework4.cabinet where cabinetName = ? order by ID asc");
             $stmt = $db -> prepare($query);
             $stmt -> execute(array($cabinetName));
             $result = $stmt -> fetchAll();

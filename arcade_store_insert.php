@@ -5,7 +5,7 @@
     $name = $_POST["name"];
     $city = $_POST["city"];
     $address = $_POST["address"];
-    $query = ("insert into store values(?, ?, ?)");
+    $query = ("insert into homework4.store values(?, ?, ?)");
     $stmt = $db -> prepare($query);
     $stmt -> execute(array($name, $city, $address));
     header("Location: arcade_store_inform.php")

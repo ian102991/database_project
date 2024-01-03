@@ -180,7 +180,7 @@
             <th>投幣方式</th>
             </tr>";
 
-            $query = ("select * from cabinet order by ID asc");
+            $query = ("select * from homework4.cabinet order by ID asc");
             $stmt = $db -> prepare($query);
             $stmt -> execute();
             $result = $stmt -> fetchAll();
