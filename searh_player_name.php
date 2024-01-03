@@ -2,7 +2,10 @@
     include_once "db_conn.php";
     try{
         $a=$_GET["player_name"];
-        $query = ("select * from homework4.playdata join homework4.store on playdata.storeName=store.name where playerName=?");
+        $query = ("create or replace view playdata_store as select storeName,city,address,cabinetName,playTime,playerName from homework4.playdata join homework4.store on playdata.storeName=store.name");
+        $stmt= $db->prepare($query);
+        $stmt->execute();
+        $query = ("select * from playdata_store where playerName=?");
         $stmt= $db->prepare($query);
         $stmt->execute(array($a));
         $result=$stmt->fetchAll();
