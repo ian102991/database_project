@@ -28,18 +28,14 @@
             ?>
             <form action="insert_act.php" method="get">
                 請輸入玩家名:<input name="player_name"><br>
+                請輸入密碼:<input name="password"><br>
                 請輸入店名:<input name="store_name"><br>
                 請輸入機器名:<input name="cabinet_name"><br>
                 <input type="datetime-local" name="playtime" value="<?php echo $nowtime; ?>" required><br>
                 <input type="radio" name="new_old_player" value="new"> 新玩家註冊<br>
                 <input type="radio" name="new_old_player" value="old"> 舊玩家<br>
-                <input type="submit" onclick="f()" class="btn btn-warning">
+                <input type="submit" class="btn btn-warning">
             </form>
-            <script>
-                function f(){
-                    alert("插入成功");
-                }
-            </script>
 		</main>
     </body>
 </html>
