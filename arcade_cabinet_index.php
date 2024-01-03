@@ -164,7 +164,7 @@
             <h1>店鋪資訊</h1>
             <div class="menu-list">
             <ul>
-                <li><a href="index_temp.php">回到首頁</a></li>
+                <li><a href="index.php">回到首頁</a></li>
             </ul>
         </div>
         </header>
