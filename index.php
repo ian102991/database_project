@@ -158,7 +158,6 @@
 				<li><a href="arcade_store_index.php">店舖資訊</a></li>
 				<li><a href="arcade_cabinet_index.php">機台資訊</a></li>
 				<li><a href="game_record.php">遊戲紀錄</a></li>
-				<li><a href="#">修改</a></li>
 			</ul>
 		</div>
 	</header>
