@@ -1,5 +1,5 @@
 <?php
-    include_once "arcade_connect.php";
+    include_once "db_conn.php";
     $storeName = $_POST["storeName"];
     $cabinetName = $_POST["cabinetName"];
     $query = ("delete from cabinet where storeName = ? and cabinetName = ?");
