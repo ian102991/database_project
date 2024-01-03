@@ -171,7 +171,7 @@
         </header>
         <?php
             header("Content-Type: text/html; charset=utf-8");
-            include_once "arcade_connect.php";
+            include_once "db_conn.php";
             echo "<table border = '1'>
             <tr>
             <th>店名</th>
