@@ -1,7 +1,7 @@
 
 <?php
     header("Content-Type: text/html; charset=utf-8");
-    include_once "arcade_connect.php";
+    include_once "db_conn.php";
     $storeName = $_POST["storeName"];
     $cabinetName = $_POST["cabinetName"];
     $wait = $_POST["wait"];
