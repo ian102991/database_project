@@ -5,6 +5,22 @@
         $query = ("create or replace view playdata_store as select storeName,city,address,cabinetName,playTime,playerName from homework4.playdata join homework4.store on playdata.storeName=store.name");
         $stmt= $db->prepare($query);
         $stmt->execute();
+        $query = ("create or replace function play_times(player_name varchar(20))
+                    returns integer
+                    begin
+                    declare cnt integer;
+                    select count(*) into cnt
+                    from homework4.playdata
+                    where playerName=player_name;
+                    return cnt;
+                    end");
+        $stmt= $db->prepare($query);
+        $stmt->execute();
+        $query = ("select play_times(?) from homework4.playdata");
+        $stmt= $db->prepare($query);
+        $stmt->execute(array($a));
+        $result=$stmt->fetchAll();
+        echo "遊玩次數 : ".$result[0][0]."<br>";
         $query = ("select * from playdata_store where playerName=?");
         $stmt= $db->prepare($query);
         $stmt->execute(array($a));
