@@ -1,7 +1,7 @@
 
 <?php
     header("Content-Type: text/html; charset=utf-8");
-    include_once "arcade_connect.php";
+    include_once "db_conn.php";
     $name = $_POST["name"];
     $city = $_POST["city"];
     $address = $_POST["address"];
