@@ -158,12 +158,13 @@
 				<li><a href="arcade_store_index.php">店舖資訊</a></li>
 				<li><a href="arcade_cabinet_index.php">機台資訊</a></li>
 				<li><a href="game_record.php">遊戲紀錄</a></li>
+				<li><a href="#">修改</a></li>
 			</ul>
 		</div>
 	</header>
 	<main>
 		<div class="pic">
-			<img src='https://shoplineimg.com/5fa3d2b246e9ed0029f5f6bf/6437c7fca4337e0020b5df7f/800x.jpg?'>
+		<blockquote class="imgur-embed-pub" lang="en" data-id="a/0W2sCDo"  ><a href="//imgur.com/a/0W2sCDo"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 		</div>
 	</main>
 </body>
